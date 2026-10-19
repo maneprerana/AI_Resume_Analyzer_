@@ -335,10 +335,14 @@ if st.button("🔍 Analyze My Resume", use_container_width=True):
                     )
 
                 st.info(
-                    "Your resume is processed locally while the app runs "
-                    "on your own computer. Avoid deploying it publicly "
-                    "without reviewing privacy and security."
-                )
+                  "Privacy Notice: Resume files are processed in the app's runtime "
+                   "for analysis. This app does not explicitly save uploaded resumes "
+                   "to a database. However, processing occurs on Streamlit Cloud "
+                   "when deployed there. Avoid uploading sensitive personal information."
+)
+
+
+                
 
         except Exception as error:
             st.error(f"Analysis failed: {error}")
